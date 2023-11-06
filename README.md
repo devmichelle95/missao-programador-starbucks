@@ -1,3 +1,13 @@
+Hey dev!
+
+I developed this project based on a class in Dev Club. We had to creat a page like Starbucks home page, I used React to do that, check it out!
+
+
+
+https://github.com/devmichelle95/missao-programador-starbucks/assets/97068209/a8e7a962-e5b5-4077-9a7b-ff32a758d56c
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
