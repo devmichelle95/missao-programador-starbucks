@@ -6,6 +6,7 @@ import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded'
 export const Container = styled.div`
 height: 100%;
 width: 100%;
+box-sizing: border-box;
 font-family: "Roboto Flex", sans-serif;
 background: rgb(255,246,237);
 background: linear-gradient(90deg, rgba(255,246,237,1) 0%, rgba(244,255,248,1) 56%, rgba(228,239,245,1) 100%);
@@ -159,10 +160,23 @@ export const Bottom = styled.div`
   font-size: 15px;
   border-top: 1px solid #cdf3fa;
   box-shadow: 1px;
+
+  p{
+    &:hover{
+      
+  transition: 0.5s all ease-out;
+    cursor: pointer;
+    color: #000e81;
+    text-decoration: underline;
+
+  }
+  }
   
 `
 export const Local = styled(FmdGoodRoundedIcon)`
 &:hover{
+  
+  transition: 0.5s all ease-out;
     cursor: pointer;
     color: #ca000f;
 }
@@ -171,7 +185,8 @@ export const Local = styled(FmdGoodRoundedIcon)`
 }
 `
 export const Phone = styled(PermPhoneMsgRoundedIcon)`
-&:hover{
+&:hover{  
+  transition: 0.5s all ease-out;
     cursor: pointer;
     color: #20cd40;
 }
@@ -180,4 +195,34 @@ export const Phone = styled(PermPhoneMsgRoundedIcon)`
 }`
 
 export const Calendar = styled(CalendarMonthRoundedIcon)`
+&:hover{
+  
+  transition: 0.5s all ease-out;
+  color: #9059ae;
+}
+`
+export const Insta = styled.div`
+display: flex;
+flex-direction: column;
+img{
+  
+  width: 30px;
+  &:hover{
+    
+  transition: 0.5s all ease-out;
+    cursor: pointer;
+    color: #000e81;
+    text-decoration: underline;
+  }
+}
+a{
+  &:hover{
+    
+  transition: 0.5s all ease-out;
+    cursor: pointer;
+    color: #000e81;
+    text-decoration: underline;
+
+  }
+}
 `
