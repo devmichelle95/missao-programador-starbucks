@@ -5,64 +5,93 @@ import {
   Container,
   Head,
   Left,
-  ButtonLogin,
-  ButtonSignin,
+  ButtonAgenda,
+  ButtonLocal,
   Right,
   Div,
   Poem,
-  Information
+  Information,
+  Bottom,
+  Local,
+  Phone,
+  Calendar
 } from './styles'
-import Logo from '../Assets/Logo.svg'
-import card1 from '../Assets/card1.jpg'
-import card2 from '../Assets/card2.jpg'
-import firstImg from '../Assets/firstImg.png'
-import secondImg from '../Assets/secondImg.png'
-import thirdImg from '../Assets/thirdImg.jpg'
+import Coluna from '../Assets/Coluna.jpg'
+import Logo from '../Assets/Logo.png'
+import card1 from '../Assets/card1.png'
+import card2 from '../Assets/card2.png'
+import secondImg from '../Assets/thirdImg.jpg'
+import InstagramIcon from '../Assets/InstagramIcon.svg'
 
 function HomePage () {
   return (
         <Container> <Head >
+            <img src={Logo} />
             <Left>
-                <img src={Logo} />
-                <a>Menu</a>
-                <a>Rewards</a>
-                <a>Nosso Café</a>
+
+                <h1>Quiropraxia e Acupuntura a Laser</h1>
+                <p>10 anos de experiência</p>
             </Left>
             <Right>
-                <a>Histórias Starbucks</a>
-                <ButtonLogin>Entrar</ButtonLogin>
-                <ButtonSignin>Participar</ButtonSignin>
+                <ButtonAgenda onClick={() => window.scrollTo(0, 2000)} >Agendar</ButtonAgenda>
+                <ButtonLocal onClick={() => window.location.assign('https://www.google.com.br/maps/place/R.+Bar%C3%A3o+do+Rio+Branco,+62+-+Ch%C3%A1cara+Labronci,+Boituva+-+SP,+18550-000/@-23.2864214,-47.6788857,17z/data=!4m15!1m8!3m7!1s0x94c5e22d47f87761:0x1bf093d8ddc6af13!2sR.+Bar%C3%A3o+do+Rio+Branco,+62+-+Ch%C3%A1cara+Labronci,+Boituva+-+SP,+18550-000!3b1!8m2!3d-23.2864263!4d-47.6763108!16s%2Fg%2F11c2dlwmbr!3m5!1s0x94c5e22d47f87761:0x1bf093d8ddc6af13!8m2!3d-23.2864263!4d-47.6763108!16s%2Fg%2F11c2dlwmbr?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D')}>Localização</ButtonLocal>
             </Right>
         </Head>
-        <Div>
-            <Carousel
-                itemsToShow={1}>
-                <img src={card1} />
-                <img src={card2} />
-            </Carousel>
+            <Div>
+                <Carousel
+                    itemsToShow={1}>
+                    <img src={card1} />
+                    <img src={card2} />
+                </Carousel>
             </Div>
             <Poem>
-                <p>“A cada xícara, a cada conversa, com cada comunidade – </p>
-                <p>Nós nutrimos infinitas possibilidades de conexão humana.”</p>
+                <p>“Tente mover o mundo – primeiro passo será mover a si mesmo.”</p>
+                <p> Platão </p>
             </Poem>
             <Information>
-                <img src={firstImg} />
+                <img src={Coluna} />
 
                 <div>
-                    <p>Sua pausa mais saborosa!
-                        Você pode fazer seu pedido sem pegar filas, pedindo pelo aplicativo da Starbucks e retirando na sua loja preferida.
+                    <p>A quiropraxia é uma abordagem terapêutica que
+                        utiliza técnicas manuais para tratar e prevenir problemas do sistema
+                        neuro-músculo-esquelético. O objetivo é realinhar a coluna vertebral
+                        e outras articulações, o que pode ajudar a aliviar dores, melhorar a
+                        mobilidade e promover o bem-estar geral.
                     </p>
                 </div>
-                <div><p>Uma surpresa refrescante para você
-                    Conheça nossa linha de Cold Brew e Refreshers™</p></div>
+                <div><p> A acupuntura a laser, também conhecida
+                    como laserpuntura, é uma técnica que utiliza laser de baixa
+                    intensidade para estimular pontos do corpo, em vez de agulhas.
+                    Combina a sabedoria da medicina chinesa com a tecnologia. A técnica
+                    é baseada na estimulação de pontos específicos dos meridianos do
+                    corpo, com o objetivo de liberar neurotransmissores e outras
+                    substâncias para tratar problemas de saúde.</p></div>
                 <img src={secondImg} />
-                <img src={thirdImg} />
+            </Information>
+            <Bottom>
                 <div>
-                    <p>Coisas boas estão acontecendo
-                        Acreditamos que podemos e devemos gerar um impacto positivo nas comunidades em que atuamos.
+                    <Local onClick={() => window.location.assign('https://www.google.com.br/maps/place/R.+Bar%C3%A3o+do+Rio+Branco,+62+-+Ch%C3%A1cara+Labronci,+Boituva+-+SP,+18550-000/@-23.2864214,-47.6788857,17z/data=!4m15!1m8!3m7!1s0x94c5e22d47f87761:0x1bf093d8ddc6af13!2sR.+Bar%C3%A3o+do+Rio+Branco,+62+-+Ch%C3%A1cara+Labronci,+Boituva+-+SP,+18550-000!3b1!8m2!3d-23.2864263!4d-47.6763108!16s%2Fg%2F11c2dlwmbr!3m5!1s0x94c5e22d47f87761:0x1bf093d8ddc6af13!8m2!3d-23.2864263!4d-47.6763108!16s%2Fg%2F11c2dlwmbr?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D')} />
+                    <p>
+                        R. Barão do Rio Branco, 62 - Centro - Boituva - SP - CEP: 18550-000
                     </p>
                 </div>
-            </Information>
+                <div>
+                    <Phone onClick={() => window.location.assign('https://api.whatsapp.com/')} />
+                    <p>  (15) 98130-9043
+                    </p>
+                </div>
+                <div>
+                    <Calendar />
+                    <p>
+                        Terça-feira e Quarta-feira 08h às 13h | Sábado 13h às 18h
+                    </p>
+                    </div>
+                    <div>
+                        <img src={InstagramIcon}/>
+                        <p>
+                        </p>
+                    </div>
+            </Bottom>
         </Container >
 
   )

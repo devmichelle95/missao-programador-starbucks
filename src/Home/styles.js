@@ -1,37 +1,46 @@
 import styled from 'styled-components'
+import FmdGoodRoundedIcon from '@mui/icons-material/FmdGoodRounded'
+import PermPhoneMsgRoundedIcon from '@mui/icons-material/PermPhoneMsgRounded'
+import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded'
 
 export const Container = styled.div`
-padding: 0;
-margin: 0;
-font-family: 'Open Sans', sans-serif;
-background-color:#FFFAFA;
+height: 100%;
+width: 100%;
+font-family: "Roboto Flex", sans-serif;
+background: rgb(255,246,237);
+background: linear-gradient(90deg, rgba(255,246,237,1) 0%, rgba(244,255,248,1) 56%, rgba(228,239,245,1) 100%);
 display: flex;
 flex-direction: column;
 gap: 10px;
 `
-
 export const Left = styled.div`
 display:flex;
-flex-direction: row;
+flex-direction: column;
 justify-content:start;
 align-items: center;
-gap:20px;`
+gap:20px;
+h1{
+  margin-top: 40px;
+    font-size: 30px;
+    color:#01002a;
 
+}
+p{
+    color: #020046;
+}
+`
 export const Head = styled.h1`
 display:flex;
 flex-direction: row;
 justify-content: space-around;
 img{
-    width: 50px;
+    width: 170px;
+    clip-path: circle(55%);
 }
-a{
+p{
     font-size: 20px;
-    cursor: pointer;
-    &:hover {
-        color:#037f40;
-    }
 }
-border-bottom: 0.5px solid #F0F8FF;
+border-bottom: 1px solid #cdf3fa;
 box-shadow: 1px;
 `
 export const Right = styled.div`
@@ -39,79 +48,91 @@ display:flex;
 flex-direction: row;
 justify-content: end;
 align-items: center;
-gap: 20px`
+gap: 30px`
 
 export const Div = styled.div`
 .rec.rec-arrow {
-    background: #bebebf;
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0.2));
+    margin-right: 40px;
+    margin-left: 40px;
+    background:#78a4a0;
     border: none;
-    color: #efefef;
+    color: #cde2c6;
   }
-  .rec.rec-arrow:hover {
+.rec.rec-arrow:hover {
     cursor: pointer;
-    border: 10px solid #efefef;
-    background-color: #efefef;
+    border: 6px solid #cde2c6;
+    background-color: #78a4a0;
   }
-  .rec.rec-arrow:disabled {
-    visibility: hidden;
-}
-    .rec-carousel-item:focus {
+.rec-carousel-item:focus {
     outline: none;
-    box-shadow: inset 0 0 1px 1px lightgrey;
+    box-shadow:#78a4a0;
+}
+.rec-dot_active {
+    background-color:#cde2c6;
+    box-shadow:  #78a4a0;
+}
+.rec-dot_active:focus,
+.rec-dot_active:hover {   
+    background-color:#cde2c6;
+    box-shadow:  #78a4a0;
 }
 `
+export const ButtonAgenda = styled.button`
+padding: 15px;
+  height: 50px;
+  background-color: #007da7;
+  color: #f4f4f4;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #305f75;
+  border: 2px solid #4f94b4;
+  transition: 0.5s all ease-out;
+  &:hover {
+    background-color: #4f94b4;
+    color: white;
+  }`
 
-export const ButtonLogin = styled.button`
-width: 80px;
-height: 30px;
-background-color:#ffffff;
-color:black;
-border-radius:60px;
-font-size: 15px;
-font-weight:bold;
-cursor: pointer;
-&:hover{
-    transform: scale(0.75);
-    transition: all 0.5s;
-}`
-
-export const ButtonSignin = styled.button`
-width: 90px;
-height: 30px;
-background-color: black;
-color:#ffffff;
-border-radius:60px;
-font-size: 15px;
-font-weight:bold;
-cursor: pointer;
-&:hover{
-transform: scale(0.75);
-transition: all 0.5s;
-}`
-
+export const ButtonLocal = styled.button`
+padding: 15px;
+  height: 50px;
+  background-color: #007da7;
+  color: #f4f4f4;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #305f75;
+  border: 2px solid #4f94b4;
+  transition: 0.5s all ease-out;
+  &:hover {
+    background-color: #4f94b4;
+    color: white;
+  }`
 export const Poem = styled.div`
-width: 1420px;
-padding: 10px;
-margin-left: 15px;
+padding: 70px;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #d3e4dc;
+font-size: 25px;
 font-style: italic;
-font-weight: bold;
-
 `
-
 export const Information = styled.div`
 display:grid;
 grid-template-columns: 50% 50%;
 grid-row-gap: 20px;
 justify-content: center;
 align-self: center;
-margin-right: 22px;
+gap: 10px;
+margin-right: 22px;  
 img{
     width: 720px;
+    clip-path: circle(50%);
 }
 
 div{
@@ -119,10 +140,44 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 720px;
-background-color: #d3e4dc;}
+background: rgb(244,254,217);
+background: radial-gradient(circle, rgba(244,254,217,1) 0%, rgba(210,244,255,1) 100%);
+clip-path: circle(60%);}
 
 p{
-margin-left: 20px;
-font-style: italic;
-font-weight: bold;
+padding: 20px;
+font-size:30px;
+text-align: center;
+color:#01002a;
+font-weight: 400;
 }`
+export const Bottom = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding:50px;
+  width: 100%;
+  font-size: 15px;
+  border-top: 1px solid #cdf3fa;
+  box-shadow: 1px;
+  
+`
+export const Local = styled(FmdGoodRoundedIcon)`
+&:hover{
+    cursor: pointer;
+    color: #ca000f;
+}
+&:active{
+    color: #d02e3a;
+}
+`
+export const Phone = styled(PermPhoneMsgRoundedIcon)`
+&:hover{
+    cursor: pointer;
+    color: #20cd40;
+}
+&:active{
+    color: #71f489;
+}`
+
+export const Calendar = styled(CalendarMonthRoundedIcon)`
+`
