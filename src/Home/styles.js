@@ -4,8 +4,8 @@ import PermPhoneMsgRoundedIcon from '@mui/icons-material/PermPhoneMsgRounded'
 import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded'
 
 export const Container = styled.div`
-height: 100%;
-width: 100%;
+height: 100vh;
+width: 100vw;
 box-sizing: border-box;
 font-family: "Roboto Flex", sans-serif;
 background: rgb(255,246,237);
