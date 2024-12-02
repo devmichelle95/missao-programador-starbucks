@@ -94,7 +94,7 @@ function HomePage () {
             <Insta>
                 <img src={InstagramIcon} alt='InstaIcon'onClick={() => window.location.assign('https://www.instagram.com/salusterapias15/')} />
 
-                <a onClick={() => window.location.assign('https://www.instagram.com/salusterapias15/')}>
+                <a href='https://www.instagram.com/salusterapias15/' onClick={() => window.location.assign('https://www.instagram.com/salusterapias15/')}>
                     Siga-nos no Instagram
                 </a>
             </Insta>
