@@ -54,18 +54,21 @@ align-items: center;
 `
 
 export const Div = styled.div`
+display: flex;
+flex:100px 1 1;
 margin-top: 2%;
 .rec.rec-arrow {
+  width: 1px;
+  min-width: 0.1px;
   visibility: hidden;
 }
 .rec.rec-pagination{
   display: flex;
   flex-direction: row;
-  
+  min-width: 2px;
 }
 .rec.rec-dot {
-max-width: 50%;
-min-width: 5%;
+min-width: 2%;
 transition: all 0.3s #d2efd7;
 &:hover{
  background-color:#cdf3fa;
@@ -150,8 +153,8 @@ background: radial-gradient(circle, rgba(244,254,217,1) 0%, rgba(210,244,255,1) 
 clip-path: circle(60%);}
 
 p{
-padding: 15%;
-font-size: clamp(0.1em, 3vw, 2rem);
+padding: 2%;
+font-size: clamp(-0.5em, 2.3vw, 4rem);
 text-align: center;
 color:#01002a;
 font-weight: 400;
@@ -159,7 +162,7 @@ font-weight: 400;
 export const Bottom = styled.div`
   display: grid;
     grid-template-columns: repeat(2, 50%);
-    
+    margin-bottom: 5%;
     padding: 3%;
     column-gap: 5%;
     row-gap: 30%;

@@ -56,18 +56,17 @@ function HomePage () {
                 <img src={Coluna} alt='Coluna' />
 
                 <div>
-                    <p>A quiropraxia é uma abordagem terapêutica que
-                        utiliza técnicas manuais para tratar e prevenir problemas do sistema
-                        neuro-músculo-esquelético. O objetivo é realinhar a coluna vertebral
+                    <p>A quiropraxia utiliza técnicas manuais para tratar e prevenir 
+                        problemas do sistema neuro-músculo-esquelético. 
+                        O objetivo é realinhar a coluna vertebral
                         e outras articulações, o que pode ajudar a aliviar dores, melhorar a
                         mobilidade e promover o bem-estar geral.
                     </p>
                 </div>
                 <div><p> A acupuntura a laser, também conhecida
-                    como laserpuntura, é uma técnica que utiliza laser de baixa
-                    intensidade para estimular pontos do corpo, em vez de agulhas.
-                    Combina a sabedoria da medicina chinesa com a tecnologia. A técnica
-                    é baseada na estimulação de pontos específicos dos meridianos do
+                    como laserpuntura,utiliza laser de baixa intensidade 
+                    para estimular pontos do corpo, em vez de agulhas.
+                    É baseada na estimulação de pontos específicos dos meridianos do
                     corpo, com o objetivo de liberar neurotransmissores e outras
                     substâncias para tratar problemas de saúde.</p></div>
                 <img src={secondImg} alt='secondImg'/>
