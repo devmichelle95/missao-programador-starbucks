@@ -24,10 +24,11 @@ import card2 from '../Assets/card2.png'
 import secondImg from '../Assets/thirdImg.jpg'
 import InstagramIcon from '../Assets/InstagramIcon.svg'
 
+
 function HomePage () {
   return (
         <Container> <Head >
-            <img src={Logo} />
+            <img src={Logo} alt='Logo' />
             <Left>
 
                 <h1>Quiropraxia e Acupuntura a Laser</h1>
@@ -40,9 +41,11 @@ function HomePage () {
         </Head>
             <Div>
                 <Carousel
-                    itemsToShow={1}>
-                    <img src={card1} />
-                    <img src={card2} />
+                    itemsToShow={1}
+                    enableAutoPlay autoPlaySpeed={2500} 
+                    >
+                    <img src={card1} alt='img1' style={{width:'100%', height:'100%'}}/>
+                    <img src={card2} alt='img2'style={{width:'100%', height:'100%'}}/>
                 </Carousel>
             </Div>
             <Poem>
@@ -50,7 +53,7 @@ function HomePage () {
                 <p> Platão </p>
             </Poem>
             <Information>
-                <img src={Coluna} />
+                <img src={Coluna} alt='Coluna' />
 
                 <div>
                     <p>A quiropraxia é uma abordagem terapêutica que
@@ -67,7 +70,7 @@ function HomePage () {
                     é baseada na estimulação de pontos específicos dos meridianos do
                     corpo, com o objetivo de liberar neurotransmissores e outras
                     substâncias para tratar problemas de saúde.</p></div>
-                <img src={secondImg} />
+                <img src={secondImg} alt='secondImg'/>
             </Information>
             <Bottom>
                 <div>
@@ -77,18 +80,19 @@ function HomePage () {
                     </p >
                 </div>
                 <div>
-                    <Phone onClick={() => window.location.assign('https://api.whatsapp.com/')} />
-                    <p onClick={() => window.location.assign('https://api.whatsapp.com/')} >  (15) 98130-9043
-                    </p>
-                </div>
-                <div>
                     <Calendar onClick={() => window.location.assign('https://api.whatsapp.com/')}/>
                         <p onClick={() => window.location.assign('https://api.whatsapp.com/') }>
                             Terça - feira e Quarta-feira 08h às 13h | Sábado 13h às 18h
                 </p>
             </div>
+                <div>
+                    <Phone onClick={() => window.location.assign('https://api.whatsapp.com/')} />
+                    <p onClick={() => window.location.assign('https://api.whatsapp.com/')} >  (15) 98130-9043
+                    </p>
+                </div>
+                
             <Insta>
-                <img src={InstagramIcon} onClick={() => window.location.assign('https://www.instagram.com/salusterapias15/')} />
+                <img src={InstagramIcon} alt='InstaIcon'onClick={() => window.location.assign('https://www.instagram.com/salusterapias15/')} />
 
                 <a onClick={() => window.location.assign('https://www.instagram.com/salusterapias15/')}>
                     Siga-nos no Instagram
